@@ -13,10 +13,6 @@ app.get('/contact', (req, res) => {
   res.send('Contact Page'); // response sent to client when /contact URL is accessed
 }); 
 
-app.get('/users/:id', (req, res) => {
-  const userId = req.params.id; // extract user ID from URL parameters
-  res.send(`User ID: ${userId}`); // response sent to client with the user ID
-});
 
 app.get('/home', (req, res) => {
   res.send('Home Page'); // response sent to client when /home URL is accessed
